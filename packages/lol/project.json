@@ -1,0 +1,34 @@
+{
+  "name": "lol",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/lol/bin",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/lol",
+        "main": "packages/lol/bin/index.ts",
+        "tsConfig": "packages/lol/tsconfig.lib.json",
+        "assets": ["packages/lol/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs lol {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/lol/jest.config.ts"
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["test-monorepo-versioning"]
+}

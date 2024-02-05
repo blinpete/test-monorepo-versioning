@@ -1,0 +1,55 @@
+{
+  "name": "test-monorepo-versioning",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/test-monorepo-versioning/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/test-monorepo-versioning",
+        "main": "packages/test-monorepo-versioning/src/index.ts",
+        "tsConfig": "packages/test-monorepo-versioning/tsconfig.lib.json",
+        "assets": [
+          "packages/test-monorepo-versioning/*.md",
+          {
+            "input": "./packages/test-monorepo-versioning/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/test-monorepo-versioning/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/test-monorepo-versioning",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/test-monorepo-versioning",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs test-monorepo-versioning {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/test-monorepo-versioning/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
