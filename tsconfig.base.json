@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
+      "@org/a": ["packages/a/src/index.ts"],
       "test-monorepo-versioning": [
         "packages/test-monorepo-versioning/src/index.ts"
       ]
