@@ -1,0 +1,6 @@
+{
+  "name": "@repo/app1",
+  "dependencies": {
+    "@org/a": "^0.0.1"
+  }
+}

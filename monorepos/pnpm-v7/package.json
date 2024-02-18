@@ -1,0 +1,4 @@
+{
+  "name": "pnpm-monorepo",
+  "packageManager": "pnpm@7.28.0"
+}

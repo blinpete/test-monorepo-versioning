@@ -1,0 +1,18 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  apps/app1:
+    specifiers:
+      '@org/a': ^0.0.1
+    dependencies:
+      '@org/a': 0.0.1
+
+packages:
+
+  /@org/a/0.0.1:
+    resolution: {integrity: sha512-lCH86jVIA3BzLtnEj95gj8HPqCBSRuXQHvPTtX9/G2DJQeU3o6Dsbgyqz9hUjq8PWV1fSoOexSRpcAwgRnbhLw==}
+    dev: false
