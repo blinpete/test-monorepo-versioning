@@ -1,0 +1,23 @@
+{
+  "name": "b",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/a/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/b",
+        "main": "packages/b/src/index.ts",
+        "tsConfig": "packages/b/tsconfig.lib.json",
+        "assets": ["packages/b/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs b {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    }
+  },
+  "tags": []
+}
