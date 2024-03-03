@@ -18,6 +18,7 @@
     "esModuleInterop": true,
     "paths": {
       "@org/a": ["packages/a/src/index.ts"],
+      "@test-monorepo-versioning/tooling": ["packages/tooling/src/index.ts"],
       "test-monorepo-versioning": [
         "packages/test-monorepo-versioning/src/index.ts"
       ]

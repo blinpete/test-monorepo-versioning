@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "pkg-generator": {
+      "factory": "./src/generators/pkg-generator/generator",
+      "schema": "./src/generators/pkg-generator/schema.json",
+      "description": "pkg-generator generator"
+    }
+  }
+}

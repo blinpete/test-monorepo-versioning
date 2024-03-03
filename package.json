@@ -2,7 +2,9 @@
   "name": "@test-monorepo-versioning/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "new-pkg": "nx g @test-monorepo-versioning/tooling:pkg-generator"
+  },
   "private": true,
   "dependencies": {
     "@nx/devkit": "18.0.1",

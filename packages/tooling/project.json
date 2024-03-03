@@ -1,0 +1,51 @@
+{
+  "name": "tooling",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/tooling/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/tooling",
+        "main": "packages/tooling/src/index.ts",
+        "tsConfig": "packages/tooling/tsconfig.lib.json",
+        "assets": [
+          "packages/tooling/*.md",
+          {
+            "input": "./packages/tooling/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/tooling/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/tooling",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/tooling",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/tooling/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
