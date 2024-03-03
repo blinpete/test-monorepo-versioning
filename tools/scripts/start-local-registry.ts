@@ -9,7 +9,7 @@ export default async () => {
   // local registry target to run
   const localRegistryTarget = '@test-monorepo-versioning/source:local-registry';
   // storage folder for the local registry
-  const storage = './tmp/local-registry/storage';
+  const storage = './verdaccio-local-registry';
 
   global.stopLocalRegistry = await startLocalRegistry({
     localRegistryTarget,

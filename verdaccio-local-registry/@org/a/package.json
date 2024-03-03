@@ -1,0 +1,48 @@
+{
+	"name": "@org/a",
+	"versions": {
+		"0.0.1": {
+			"name": "@org/a",
+			"version": "0.0.1",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "c34853bca2824415a935caa79abfb1f5240f4b79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@0.0.1",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-lCH86jVIA3BzLtnEj95gj8HPqCBSRuXQHvPTtX9/G2DJQeU3o6Dsbgyqz9hUjq8PWV1fSoOexSRpcAwgRnbhLw==",
+				"shasum": "bcb556c815fd2e45bdfb42578136742558f508dc",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-0.0.1.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2024-03-03T21:51:30.164Z",
+		"created": "2024-03-03T21:51:30.164Z",
+		"0.0.1": "2024-03-03T21:51:30.164Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.0.1",
+		"next": "0.0.1"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"a-0.0.1.tgz": {
+			"shasum": "bcb556c815fd2e45bdfb42578136742558f508dc",
+			"version": "0.0.1"
+		}
+	},
+	"_rev": "3-96c07c7546ae9e57",
+	"_id": "@org/a",
+	"readme": "# a\n\nThis library was generated with [Nx](https://nx.dev).\n\n## Building\n\nRun `nx build a` to build the library.\n\n## Running unit tests\n\nRun `nx test a` to execute the unit tests via [Jest](https://jestjs.io).\n"
+}
