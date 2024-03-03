@@ -1,0 +1,23 @@
+{
+  "name": "a_b_peer_c_peer_e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/a/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/a_b_peer_c_peer_e",
+        "main": "packages/a_b_peer_c_peer_e/src/index.ts",
+        "tsConfig": "packages/a_b_peer_c_peer_e/tsconfig.lib.json",
+        "assets": ["packages/a_b_peer_c_peer_e/*.md"]
+      }
+    },
+    "publish": {
+      "command": "node tools/scripts/publish.mjs a_b_peer_c_peer_e {args.ver} {args.tag}",
+      "dependsOn": ["build"]
+    }
+  },
+  "tags": []
+}
