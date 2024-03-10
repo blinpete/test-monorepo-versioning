@@ -1,8 +1,8 @@
 {
-  "name": "@org/a_peer_c",
+  "name": "@org/a_b",
   "version": "0.0.1",
   "dependencies": {
-    "@org/a": ""
+    "@org/a": "^0.1.x"
   },
   "devDependencies": {
     "tslib": "^2.3.0"

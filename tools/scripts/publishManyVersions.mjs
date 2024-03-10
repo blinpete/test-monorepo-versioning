@@ -84,6 +84,9 @@ try {
     console.log(`🚀 publishing ${project.name}@${version}`)
     execSync(`npm publish --access public --tag ${tag}`);
   }
+
+  // latest
+  // execSync(`npm publish --access public --tag latest`);
 } catch (e) {
   console.log("🚀 | e:", e)
   console.error(`Error reading package.json file from library build output.`);
