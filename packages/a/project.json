@@ -15,7 +15,7 @@
       }
     },
     "publish": {
-      "command": "node tools/scripts/publish.mjs a {args.ver} {args.tag}",
+      "command": "node tools/scripts/publish.mjs a {args.ver} {args.tag} {args.deps}",
       "dependsOn": ["build"]
     }
   },
