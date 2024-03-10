@@ -1,6 +1,9 @@
 {
   "name": "@org/a_peer_c",
   "version": "0.0.1",
+  "dependencies": {
+    "@org/a": ""
+  },
   "devDependencies": {
     "tslib": "^2.3.0"
   },
