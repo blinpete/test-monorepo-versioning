@@ -1,0 +1,7 @@
+{
+  "name": "npm-v9",
+  "packageManager": "npm@9.5.1",
+  "workspaces": [
+    "apps/*"
+  ]
+}
