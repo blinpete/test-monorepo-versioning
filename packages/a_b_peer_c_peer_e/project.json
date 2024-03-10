@@ -14,8 +14,8 @@
         "assets": ["packages/a_b_peer_c_peer_e/*.md"]
       }
     },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs a_b_peer_c_peer_e {args.ver} {args.tag} {args.deps}",
+    "publishMany": {
+      "command": "node tools/scripts/publishManyVersions.mjs a_b_peer_c_peer_e {args.tag}",
       "dependsOn": ["build"]
     }
   },

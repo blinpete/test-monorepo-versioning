@@ -14,8 +14,8 @@
         "assets": ["packages/<%= name %>/*.md"]
       }
     },
-    "publish": {
-      "command": "node tools/scripts/publish.mjs <%= name %> {args.ver} {args.tag} {args.deps}",
+    "publishMany": {
+      "command": "node tools/scripts/publishManyVersions.mjs <%= name %> {args.tag}",
       "dependsOn": ["build"]
     }
   },
