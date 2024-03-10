@@ -21,12 +21,29 @@ function invariant(condition, message) {
   }
 }
 
-function updatePackageJson(version, deps) {
+function updatePackageJson(mixin) {
   const json = JSON.parse(readFileSync(`package.json`).toString());
 
-  json.version = version;
-  if (deps) {
-    Object.assign(json.dependencies, deps);
+  for (const [key,val] of Object.entries(mixin)) {
+    if (val == null) continue
+
+    if (typeof val === 'object') {
+      // obj -> merge in
+      // example:
+      //  - dependencies
+      //  - peerDependencies
+
+      json[key] = {
+        ...(json[key] || {}),
+        ...val
+      };
+    } else {
+      // literal -> assign
+      // example:
+      //  - version
+
+      json[key] = val
+    }
   }
 
   // console.log("🚀 | updatePackageJson | json:", json)
@@ -56,20 +73,26 @@ try {
   const publishMeta = readJsonFile(path.resolve(project.data.root, 'publishMeta.json'))
   // console.log("🚀 | publishMeta:", publishMeta)
 
-  const dep = publishMeta.dependency
-
-  const versionsList = publishMeta.versionToDep.map(x => [
-    // version
-    x[0],
-    // dependency for this version
-    { [dep]: x[1] },
-  ])
+  const versionsList = publishMeta.versionToDep.map(x => {
+    return {
+      // version
+      version: x[0],
+      // dependency for this version
+      dependencies: publishMeta.dependency
+        ? { [publishMeta.dependency]: x[1] }
+        : null,
+      peerDependencies: publishMeta.peerDependency
+        ? { [publishMeta.peerDependency]: x[1] }
+        : null,
+    }
+  })
 
   console.log("🚀 | versionsList:", versionsList)
   process.chdir(outputPath);
 
 
-  for (const [version,deps] of versionsList) {
+  for (const pkgJsonMixin of versionsList) {
+    const version = pkgJsonMixin.version;
     // A simple SemVer validation to validate the version
     const validVersion = /^\d+\.\d+\.\d+(-\w+\.\d+)?/;
     invariant(
@@ -78,7 +101,7 @@ try {
     );
 
     // Updating the version and dependencies in "package.json" before publishing
-    updatePackageJson(version, deps);
+    updatePackageJson(pkgJsonMixin);
 
     // Execute "npm publish" to publish
     console.log(`🚀 publishing ${project.name}@${version}`)
