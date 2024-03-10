@@ -396,10 +396,120 @@
 				"tarball": "http://localhost:4873/@org/a/-/@org/a-2.1.2.tgz"
 			},
 			"contributors": []
+		},
+		"0.1.1": {
+			"name": "@org/a",
+			"version": "0.1.1",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "ec95f82ce52b286addf2a2a19a2613cd84fddb79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@0.1.1",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-ahWJDuMZmm4V5UkctT9qhTeLxkZUPR/vvM7hRykAfa5NwlQja+QzCR/ypMi/l12wR7lq1BVABPFRoMCWhXNTBA==",
+				"shasum": "763dfeb9e6534df09fe1c52168f0885a2136d1fe",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-0.1.1.tgz"
+			},
+			"contributors": []
+		},
+		"1.0.3": {
+			"name": "@org/a",
+			"version": "1.0.3",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "ec95f82ce52b286addf2a2a19a2613cd84fddb79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@1.0.3",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-gReE5Dp8NFl7OSjjG5gKjB2UQ0zRAxUH+H80FhZUCMrvkg7HIYabvSH5CyGf2eR0ldAPKPwFc9amNYNbzKqQBw==",
+				"shasum": "0a9ec79995ae2ff17440e61ce6f6d44d4659e7be",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-1.0.3.tgz"
+			},
+			"contributors": []
+		},
+		"1.1.3": {
+			"name": "@org/a",
+			"version": "1.1.3",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "ec95f82ce52b286addf2a2a19a2613cd84fddb79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@1.1.3",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-V0+C2oyyU0i1OkSJ2x513fTj0oEWr7GPZlsBanfMrQydqJGtb7zCe/T1C6MenS8XcplgYKH3s5RybtVnooNJUw==",
+				"shasum": "85765770072135a1c2e1a446e83a550025c57083",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-1.1.3.tgz"
+			},
+			"contributors": []
+		},
+		"2.0.3": {
+			"name": "@org/a",
+			"version": "2.0.3",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "ec95f82ce52b286addf2a2a19a2613cd84fddb79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@2.0.3",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-T6KMx4UHiG+vNBaXpBvi6GCPPTAqHcO4mN77Yqi74bjwB8aNoY+e9zYr/5+O0ROCShM1hULfaOq2dp1iqUMn1A==",
+				"shasum": "f8444b1f606344f225f53c0c31561b17b58b962b",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-2.0.3.tgz"
+			},
+			"contributors": []
+		},
+		"2.1.3": {
+			"name": "@org/a",
+			"version": "2.1.3",
+			"devDependencies": {
+				"tslib": "^2.3.0"
+			},
+			"type": "commonjs",
+			"main": "./src/index.js",
+			"typings": "./src/index.d.ts",
+			"readmeFilename": "README.md",
+			"gitHead": "ec95f82ce52b286addf2a2a19a2613cd84fddb79",
+			"description": "This library was generated with [Nx](https://nx.dev).",
+			"_id": "@org/a@2.1.3",
+			"_nodeVersion": "18.16.0",
+			"_npmVersion": "9.5.1",
+			"dist": {
+				"integrity": "sha512-20Tin4Bfo8sTC6lGyOE47mMv9cShY5YTLH+Y02s4j43Y+X/tE6fYILU/AZYHTwz4JfHdaJZk9YGNauR7mMfEyw==",
+				"shasum": "91bfe3a852cc3c6c90009353cda47431615ede12",
+				"tarball": "http://localhost:4873/@org/a/-/@org/a-2.1.3.tgz"
+			},
+			"contributors": []
 		}
 	},
 	"time": {
-		"modified": "2024-03-03T23:05:38.147Z",
+		"modified": "2024-03-10T20:45:55.099Z",
 		"created": "2024-03-03T21:51:30.164Z",
 		"0.0.1": "2024-03-03T21:51:30.164Z",
 		"0.0.2": "2024-03-03T23:00:13.408Z",
@@ -418,11 +528,16 @@
 		"2.0.2": "2024-03-03T23:05:34.793Z",
 		"2.1.0": "2024-03-03T23:05:35.855Z",
 		"2.1.1": "2024-03-03T23:05:36.967Z",
-		"2.1.2": "2024-03-03T23:05:38.147Z"
+		"2.1.2": "2024-03-03T23:05:38.147Z",
+		"0.1.1": "2024-03-10T20:45:49.598Z",
+		"1.0.3": "2024-03-10T20:45:50.973Z",
+		"1.1.3": "2024-03-10T20:45:52.354Z",
+		"2.0.3": "2024-03-10T20:45:53.720Z",
+		"2.1.3": "2024-03-10T20:45:55.099Z"
 	},
 	"users": {},
 	"dist-tags": {
-		"latest": "2.1.2",
+		"latest": "2.1.3",
 		"next": "0.1.3"
 	},
 	"_uplinks": {},
@@ -499,9 +614,29 @@
 		"a-2.1.2.tgz": {
 			"shasum": "bbacabe019fdf897008eb402f18891e83806b759",
 			"version": "2.1.2"
+		},
+		"a-0.1.1.tgz": {
+			"shasum": "763dfeb9e6534df09fe1c52168f0885a2136d1fe",
+			"version": "0.1.1"
+		},
+		"a-1.0.3.tgz": {
+			"shasum": "0a9ec79995ae2ff17440e61ce6f6d44d4659e7be",
+			"version": "1.0.3"
+		},
+		"a-1.1.3.tgz": {
+			"shasum": "85765770072135a1c2e1a446e83a550025c57083",
+			"version": "1.1.3"
+		},
+		"a-2.0.3.tgz": {
+			"shasum": "f8444b1f606344f225f53c0c31561b17b58b962b",
+			"version": "2.0.3"
+		},
+		"a-2.1.3.tgz": {
+			"shasum": "91bfe3a852cc3c6c90009353cda47431615ede12",
+			"version": "2.1.3"
 		}
 	},
-	"_rev": "54-dde2134c1302efd1",
+	"_rev": "69-2d4bd7492be12f0d",
 	"_id": "@org/a",
 	"readme": "# a\n\nThis library was generated with [Nx](https://nx.dev).\n\n## Building\n\nRun `nx build a` to build the library.\n\n## Running unit tests\n\nRun `nx test a` to execute the unit tests via [Jest](https://jestjs.io).\n"
 }
